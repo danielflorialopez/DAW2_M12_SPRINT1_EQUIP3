@@ -26,6 +26,10 @@
 	float: right;
 }
 
+.imatge2 {
+	display: none;
+}
+
 /*******************************/
 /*          2.Navbar           */
 /*******************************/
@@ -82,6 +86,8 @@
 	.left { float: none; }
 	.right { float: none; }
 	.navbar-blue > div > ul > li > a { color: #428bca}
+	.imatge1 {	display: none; }
+	.imatge2 {	display: block; }
 }
 
 .navbar-static-top,
@@ -197,7 +203,7 @@ img.pull-left { margin-right: 10px; }
 
 @media (max-width: 767px) {
 	.navbar-blue {	background-color: #1d1a31; }
-	.searchbar-input { 	width: 150px; margin-left: 15px; margin-top: 0px; padding:9px 10px;}
+	.searchbar-input { 	width: 230px; margin-left: 15px; margin-top: 0px; padding:9px 10px;}
 	.button-search-bar {margin-top:0px; margin-left: 10px}
 	.logo {padding-top: 4px}
 	.button-search-bar:hover {	background-color: #333;	}
