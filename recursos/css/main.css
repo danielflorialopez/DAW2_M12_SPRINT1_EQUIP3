@@ -2,16 +2,40 @@
 /*	   1.General CSSS     */
 /**************************/
 
+p.error {
+	font-size: 12px;
+	color: red;
+	margin-top: -5px;
+}
+
 .col-sm-4 {
     width: 29.6%;
 }
 
-#breadcrumbLogin{
-    margin-bottom: 50px;
+.margin-top-login {
+	margin-top:225px;
+}
+
+.proposta-hr {
+	margin-top:10px;
 }
 
 .button-search-bar:hover {
     border: 1px solid #fff;
+}
+
+.add:hover {
+    border: 1px solid #1D1A31;
+	color:#1D1A31;
+
+}
+
+.margin-left-formulari {
+	margin-left: 6%;
+}
+
+.padding-plus {
+	padding-top:15px;
 }
 
 .padding-bottom {
@@ -20,7 +44,7 @@
 
 .padding-top {
 	padding-top: 25px;
-	background:#1d1a31;
+	background:#1D1A31;
 	width: 100%;
     padding-left: 5%;
     padding-right: 5%
@@ -49,6 +73,37 @@
 .padding {
 	padding-left:15px;
 	padding-right:15px;
+}
+
+.subrayado {
+	text-decoration: underline;
+}
+
+.compartir {
+	margin: 0 0 20px;
+}
+
+.categoria {
+	margin-top: 100px;
+}
+
+.margin-categoria {
+	margin-top: 20px;
+}
+
+.documents {
+	margin-top: 50px;
+}
+
+.imatge-proposta {
+	width: 70%;
+	height: 70%;
+	margin-bottom: 35px;
+	margin-top: 20px;
+}
+
+.edit-icon {
+	padding-right: 20px;
 }
 
 /*******************************/
@@ -145,7 +200,6 @@
 h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top:20px; } 
 blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
-label { color: #777; }
 .thin { font-weight:300; }
 .page-title { margin-top:20px; font-weight:300; }
 .text-muted { color:#888; }
@@ -209,32 +263,20 @@ img.pull-left { margin-right: 10px; }
 	padding: 10px 15px;
 }
 
+.add {
+	border: 1px solid #65AFFF;
+	float: right;
+	border-radius: 25px;
+    cursor: pointer;
+	padding: 10px 15px;
+}
+
 .espaiat {
 	display: none;
 }
 
 .margin-top {
 	margin-top: 140px;
-}
-
-@media (max-width: 992px) {
-	.searchbar-input { 	width: 200px; }
-	.espaiat {	display: block; }
-}
-
-@media (max-width: 767px) {
-	.navbar-blue {	background-color: #1d1a31; }
-	.searchbar-input { 	width: 230px; margin-left: 15px; margin-top: 0px; padding:9px 10px;}
-	.button-search-bar {margin-top:0px; margin-left: 10px}
-	.logo {padding-top: 4px}
-	.button-search-bar:hover {	background-color: #333;	}
-	.navbar-size {padding: 13px 10px;}
-	.margin-top {margin-top:90px; }
-	.col-md-4 {	width: 13.33333333333333%; }
-}
-
-@media (max-width: 480px) {
-	.searchbar-input { 	width: 100px; margin-left: 15px; margin-top: 0px; padding:9px 10px;}
 }
 
 .center {
@@ -273,6 +315,48 @@ img.pull-left { margin-right: 10px; }
 	align-items: center;
 }
 
+.formulari-crear {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.formulari-crear-textarea {
+    width: 100%;
+    height: 345px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+	resize:none;
+}
+
+.formulari-send {
+	margin-top: 15px;
+	width: 100%;
+	cursor:pointer;
+}
+
+.formulari {
+	margin-top:55px;
+	width:100%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
 @supports(object-fit: cover){
     .imatgespropostes{
       height: 100%;
@@ -286,9 +370,26 @@ img.pull-left { margin-right: 10px; }
 }
 
 @media (max-width: 992px) {
+	.searchbar-input { 	width: 200px; }
+	.espaiat {	display: block; }
+	.margin-left-formulari {	margin-left: 0; }
+	.formulari-send { margin-top: 20px;}
 	.col-sm-4 {	width: 27.4%;	}
+	.imatge-proposta {	width: 75%;	height: 75%; margin-bottom: 25px; }
+}
+
+@media (max-width: 767px) {
+	.navbar-blue {	background-color: #1d1a31; }
+	.searchbar-input { 	width: 230px; margin-left: 15px; margin-top: 0px; padding:9px 10px;}
+	.button-search-bar {margin-top:0px; margin-left: 10px}
+	.logo {padding-top: 4px}
+	.button-search-bar:hover {	background-color: #333;	}
+	.navbar-size {padding: 13px 10px;}
+	.margin-top {margin-top:90px; }
+	.col-md-4 {	width: 13.33333333333333%; }
 }
 
 @media (max-width: 480px) {
+	.searchbar-input { 	width: 100px; margin-left: 15px; margin-top: 0px; padding:9px 10px;}
 	.img-size {	height: 0 auto; }
 }
