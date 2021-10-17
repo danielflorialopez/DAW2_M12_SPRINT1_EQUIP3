@@ -52,7 +52,7 @@
 		
 			<div class="row">
 				<div class="col-sm-3 box">
-					<h4>Filtra per:</h4>
+					<h5 class="bold subrayado">Categoria</h5>
 					<div class="checkbox">
 						<label><input type="checkbox" value="">Impresora 3D</label>
 					</div>
