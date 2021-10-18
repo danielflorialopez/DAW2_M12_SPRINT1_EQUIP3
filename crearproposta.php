@@ -5,14 +5,14 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<?php include "./head.html" ?>
+	<?php include_once "./head.html" ?>
 	<script src="validacions.js"></script>
 
 	<body class="home">
 	
 		<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 
-			<?php include "./headernoregistrat.html" ?>
+			<?php include_once "./headernoregistrat.html" ?>
 
 			<div class="navbar-blue">
 				<div class="navbar-collapse collapse">
@@ -78,11 +78,11 @@
 		</div>
 
 		<footer id="footer" class="top-space">		
-			<?php include "./footer1.html" ?>
-			<?php include "./footer2.html" ?>
+			<?php include_once "./footer1.html" ?>
+			<?php include_once "./footer2.html" ?>
 		</footer>	
 	
-		<?php include "./scripts.html" ?>
+		<?php include_once "./scripts.html" ?>
 
 	</body>
 </html>
