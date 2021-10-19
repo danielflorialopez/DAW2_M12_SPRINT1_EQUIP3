@@ -25,7 +25,7 @@
    /* $recurs1->llistarRecursos($recurs);
     $recurs1->crearRecurs($_POST['nomrecurs'], $_POST['aportatper']);
     $recurs1->alta($_POST['nomrecurs'], $_POST['aportatper']);
-    $recurs1->crearRecurs(2,2);*/
+    $recurs1->crearRecurs(2,2);aaaaaaaa*/
 ?>
     </body>
 </html>
