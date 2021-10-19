@@ -12,7 +12,7 @@
 	
 		<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 
-			<?php include_once "./headernoregistrat.html" ?>
+			<?php include_once "./headerregistrat.html" ?>
 
 			<div class="navbar-blue">
 				<div class="navbar-collapse collapse">
@@ -49,12 +49,12 @@
 			<h2 class="thin">Crear recursos</h2>
 			<hr>
 		
-			<form action="#" target="" method="" name="" class="formulari">
+			<form action="altarecurs.php" method="post" action="" class="formulari">
 				<label>Recurs<span class="text-danger">*</span></label>
-				<input type="text" placeholder="Recurs" id="nomrecurs" class="formulari-crear"/>
+				<input type="text" placeholder="Recurs" id="nomrecurs" name="nomrecurs" class="formulari-crear"/>
 				<p class="error" id="errorrecurs"></p>
 				<label>Aportat per<span class="text-danger">*</span></label>
-				<input type="text" placeholder="Aportat per" id="aportatper" class="formulari-crear"/>
+				<input type="text" placeholder="Aportat per" id="aportatper" name="aportatper" class="formulari-crear"/>
 				<p class="error" id="erroraportat"></p>
 				<input class="formulari-send btn btn-action" onclick="isNameEmpty2()" type="submit" name="enviar" value="Publicar"/>
         	</form>

@@ -8,6 +8,11 @@ p.error {
 	margin-top: -5px;
 }
 
+.error-login {
+	font-size: 12px;
+	color: red;
+}
+
 .col-sm-4 {
     width: 29.6%;
 }
@@ -132,7 +137,7 @@ p.error {
 	.navbar-inverse .navbar-brand img { margin-top:-8px;}
 
 .navbar-nav .dropdown-menu {
-	left:-5px;
+	left:-40px;
 	font-size: 13px;
 	background-color: #1D1A31;
 	border: 0px none;
@@ -371,6 +376,7 @@ img.pull-left { margin-right: 10px; }
 
 @media (max-width: 992px) {
 	.searchbar-input { 	width: 200px; }
+	.navbar-nav .dropdown-menu {	left:-60px; }
 	.espaiat {	display: block; }
 	.margin-left-formulari {	margin-left: 0; }
 	.formulari-send { margin-top: 20px;}

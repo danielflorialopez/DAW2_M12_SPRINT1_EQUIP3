@@ -1,11 +1,44 @@
 <?php
-  require_once('./sessio.php');
+	if (isset($_POST["mail_entra"]) && isset($_POST["pass_entra"])) {
+		$mail = 'ericvidiella@iesmontsia.org';
+		$pass = 'Admin1234';
+		$mailEntra = $_POST["mail_entra"];
+		$passEntra = $_POST["pass_entra"];
+		$tipus= 'maker';
+
+		if ($passEntra == $pass && $mailEntra == $mail) {
+			session_start();
+			
+			switch ($tipus) {
+				case 'maker':
+				  header("Location: ./recursos.php");
+				  die();
+				  break;
+			
+				case 'promotor':
+				  header("Location: ./professors/index.php");
+				  die();
+				  break;
+			
+				default:
+				  header("Location: login.php");
+				  die();
+				  break;
+			  }
+		  
+		} else {
+			header("Location: login.php");
+			die();
+		}
+	}
+	
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 
 	<?php include_once "./head.html" ?>
+	<script src="validacions.js"></script>
 
 	<body class="home">
 	
@@ -44,14 +77,16 @@
 						  <p class="text-center text-muted">Si no tens un compte el pots crear ràpidament <a href="signup.php">aquí</a>, si ja en tens un entra al teu compte i posa't mans a la feina </p>
 						  <hr>
 						  
-						  <form>
+						  <form action="login.php" method="post">
 							  <div class="top-margin">
-								  <label>Usuari/Email <span class="text-danger">*</span></label>
-								  <input type="text" class="form-control">
+								  <label>Email <span class="text-danger">*</span></label>
+								  <input type="text" name="mail_entra" id="email" class="form-control">
+								  <p class="error-login" id="erroremail"></p>
 							  </div>
 							  <div class="top-margin">
 								  <label>Contrasenya <span class="text-danger">*</span></label>
-								  <input type="password" class="form-control">
+								  <input type="password" name="pass_entra" id="password" class="form-control">
+								  <p class="error-login" id="errorpassword"></p>
 							  </div>
 
 							  <hr>
@@ -61,7 +96,7 @@
 									  <b><a href="">Has olvidat la contrasenya?</a></b>
 								  </div>
 								  <div class="col-lg-4 text-right">
-									  <button class="btn btn-action" type="submit">Entrar</button>
+									  <button class="btn btn-action" onclick="checkUsername()" type="submit">Entrar</button>
 								  </div>
 							  </div>
 						  </form>

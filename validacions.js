@@ -38,3 +38,21 @@ function isNameEmpty2(){
         document.getElementById("erroraportat").innerText ="";
     }
 }
+
+function checkUsername(){
+    let username = document.getElementById("email").value;
+    
+    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9~]+\.[a-zA-Z]{2,4}$/.test(username)) {
+        document.getElementById("erroremail").innerText ="";
+    }else{
+        document.getElementById("erroremail").innerText ="L'email o la contrassenya és incorrecte. Intenta-ho de nou.";
+    }
+    
+    let password = document.getElementById("password").value;
+
+    if (password.length < MIN_LENGTH || password.length > MAX_LENGTH) {
+        document.getElementById("errorpassword").innerText ="L'email o la contrassenya és incorrecte. Intenta-ho de nou.";
+    }else{
+        document.getElementById("errorpassword").innerText ="";
+    }
+}

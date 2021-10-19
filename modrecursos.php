@@ -12,7 +12,7 @@
 	
 		<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 
-			<?php include_once "./headernoregistrat.html" ?>
+			<?php include_once "./headerregistrat.html" ?>
 
 			<div class="navbar-blue">
 				<div class="navbar-collapse collapse">
