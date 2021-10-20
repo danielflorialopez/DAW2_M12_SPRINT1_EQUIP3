@@ -1,21 +1,14 @@
-/**************************/
-/*	   1.General CSSS     */
-/**************************/
+/*	1.	General CSS	*/
 
-.padding-bottom {
-	padding-bottom: 25px;
+p.error {
+	font-size: 12px;
+	color: red;
+	margin-top: -5px;
 }
 
-.padding-top {
-	padding-top: 25px;
-	background:#1d1a31;
-	width: 100%;
-    padding-left: 5%;
-    padding-right: 5%
-}
-
-.letter-black {
-	color: #191919
+.add:hover {
+    border: 1px solid #1D1A31;
+	color:#1D1A31;
 }
 
 .left {
@@ -30,9 +23,240 @@
 	display: none;
 }
 
-/*******************************/
-/*          2.Navbar           */
-/*******************************/
+.margin-top {
+	margin-top: 140px;
+}
+
+.padding {
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.searchbar-input {
+	border: 1px solid rgba(255, 255, 255, .2);
+	font-family:"Open sans", Helvetica, Arial;
+	width: 300px;
+	border-radius: 2px;
+	margin-left: 55px;
+	margin-top: 5px;
+	padding: 10px 15px;
+}
+
+.navbar-blue {
+	background-color: #65AFFF;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.button-search-bar {
+	border: 1px solid #65AFFF;
+	margin-left: 15px;
+	margin-top: 5px;
+	border-radius: 3px;
+	text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+	padding: 10px 15px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.formulari-crear {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.formulari-crear-textarea {
+    width: 100%;
+    height: 345px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+	resize:none;
+}
+
+.formulari-send {
+	margin-top: 15px;
+	width: 100%;
+	cursor:pointer;
+}
+
+.formulari {
+	margin-top:55px;
+	width:100%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+/*	1.05 Navbar	*/
+
+.button-search-bar:hover {
+    border: 1px solid #fff;
+}
+
+.padding-bottom {
+	padding-bottom: 25px;
+}
+
+.padding-top {
+	padding-top: 25px;
+	background:#1D1A31;
+	width: 100%;
+    padding-left: 5%;
+    padding-right: 5%
+}
+
+/*	1.1 Login.php	*/
+
+.error-login {
+	font-size: 12px;
+	color: red;
+}
+
+.validacio-php {
+	color: red;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+.margin-top-login {
+	margin-top:225px;
+}
+
+/*	1.2 Signup.php	*/
+
+.col-pass-6 {
+	position: relative;
+    min-height: 1px;
+}
+
+.padding-right-pass {
+	padding-right: 15px;
+}
+
+.padding-left-pass {
+	padding-left: 15px;
+}
+
+/*	1.3 Propostes	*/
+
+.col-sm-4 {
+    width: 29.6%;
+}
+
+.padding-plus {
+	padding-top:15px;
+}
+
+.proposta-hr {
+	margin-top:10px;
+}
+
+.img-size {
+	height: 121px;
+}
+
+.subrayado {
+	text-decoration: underline;
+}
+
+.compartir {
+	margin: 0 0 20px;
+}
+
+.categoria {
+	margin-top: 100px;
+}
+
+.documents {
+	margin-top: 50px;
+}
+
+.imatge-proposta {
+	width: 70%;
+	height: 70%;
+	margin-bottom: 35px;
+	margin-top: 20px;
+}
+
+.margin-categoria {
+	margin-top: 20px;
+}
+
+.add {
+	border: 1px solid #65AFFF;
+	float: right;
+	border-radius: 25px;
+    cursor: pointer;
+	padding: 10px 15px;
+}
+
+.box {
+	border: 1px solid #191919;
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
+.margin-left {
+	margin-left: 6%;
+}
+
+.margin-right {
+	margin-right: 30px;
+}
+
+.margin-bottom {
+	margin-bottom: 15px;
+}
+
+.imatgespropostes {
+	width: 100%;
+  	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*	1.4 Crear proposta	*/
+
+.margin-left-formulari {
+	margin-left: 6%;
+}
+
+/*	1.5 Recursos  */
+
+.edit-icon {
+	padding-right: 20px;
+}
+
+/*	2.Navbar	*/
+
 .navbar-inverse { min-height:100px; margin-bottom:0;}
 .navbar-inverse *:focus { outline: 0; }
 @media (max-width: 767px) {
@@ -56,13 +280,14 @@
 	.navbar-inverse .navbar-brand img { margin-top:-8px;}
 
 .navbar-nav .dropdown-menu {
-	left:-5px;
+	left:-40px;
 	font-size: 13px;
 	background-color: #1D1A31;
 	border: 0px none;
 	-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;
 	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
+
 .navbar-nav .dropdown-menu > li > a { color:#428bca; padding:7px 20px; }
 	.navbar-nav .dropdown-menu > li > a:hover,
 	.navbar-nav .dropdown-menu > li > a:focus,
@@ -94,9 +319,9 @@
 .navbar-fixed-top,
 .navbar-fixed-bottom { border-radius: 0; }
 
-/*******************************/
-/*          Botons              */
-/*******************************/
+
+/*	3. Botons	*/
+
 .btn-default, .btn-primary, .btn-success, .btn-action
 .btn-info,    .btn-warning, .btn-danger {
 	text-shadow: 0 2px 1px rgba(0, 0, 0, .2);
@@ -116,22 +341,21 @@
 	.btn-action:focus {color:#fff; background: #FF9B22; }
 	.btn-action:active {background: #FF8C00; }
 
-/* Autohide navbar */
+/* 4. Ocultar automàticament la barra de navegació */
 .slideUp { top:-104px; }
 .headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
 
-/* Typography */
+/*	5. Tipografia	*/
 h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top:20px; } 
 blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
-label { color: #777; }
 .thin { font-weight:300; }
 .page-title { margin-top:20px; font-weight:300; }
 .text-muted { color:#888; }
 .breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
 ul.list-spaces li{ margin-bottom:10px; }
 
-/* Helpers */
+/*	6. Ajudants	*/
 .container-full { margin: 0 auto; width: 100%; }
 .top-space { margin-top: 60px; }
 .top-margin { margin-top:20px; }
@@ -141,7 +365,7 @@ img.pull-right { margin-left: 10px; }
 img.pull-left { margin-right: 10px; }
 #map { width:100%; height:280px; }
 
-/* Footer */
+/*	7. Footer	*/
 .footer1 { background: #1D1A31; padding: 30px 0 0 0; font-size: 12px; color: #999; }
 	.footer1 a { color: #ccc; }
 		.footer1 a:hover {color: #fff; }
@@ -160,45 +384,35 @@ img.pull-left { margin-right: 10px; }
 
 	.widget-simplenav { margin-left:-5px; }		
 	.widget-simplenav a{ margin:0 5px; }
-	
-.searchbar-input {
-	border: 1px solid rgba(255, 255, 255, .2);
-	font-family:"Open sans", Helvetica, Arial;
-	width: 300px;
-	border-radius: 2px;
-	margin-left: 55px;
-	margin-top: 5px;
-	padding: 10px 15px;
-}
-
-.navbar-blue {
-	background-color: #65AFFF;
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.button-search-bar {
-	border: 1px solid #65AFFF;
-	margin-left: 15px;
-	margin-top: 5px;
-	border-radius: 3px;
-	text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-	padding: 10px 15px;
-}
 
 .espaiat {
 	display: none;
 }
 
-.margin-top {
-	margin-top: 140px;
+@supports(object-fit: cover){
+    .imatgespropostes{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+@media (min-width:768px) {
+	.col-pass-6 { width: 50%; float:left;	}
+}
+
+@media (max-width:1200px) {
+	.col-sm-4 {	width: 28.8%;	}
 }
 
 @media (max-width: 992px) {
 	.searchbar-input { 	width: 200px; }
+	.navbar-nav .dropdown-menu {	left:-60px; }
 	.espaiat {	display: block; }
+	.margin-left-formulari {	margin-left: 0; }
+	.formulari-send { margin-top: 20px;}
+	.col-sm-4 {	width: 27.4%;	}
+	.imatge-proposta {	width: 75%;	height: 75%; margin-bottom: 25px; }
 }
 
 @media (max-width: 767px) {
@@ -209,13 +423,13 @@ img.pull-left { margin-right: 10px; }
 	.button-search-bar:hover {	background-color: #333;	}
 	.navbar-size {padding: 13px 10px;}
 	.margin-top {margin-top:90px; }
+	.col-md-4 {	width: 13.33333333333333%; }
+	.padding-right-pass { padding-right: 0px;	}
+	.padding-left-pass { padding-left: 0px;	}
+	.top-margin-pass { margin-top: 20px;}
 }
 
 @media (max-width: 480px) {
 	.searchbar-input { 	width: 100px; margin-left: 15px; margin-top: 0px; padding:9px 10px;}
-}
-
-.center {
-    display: flex;
-    align-items: center;
+	.img-size {	height: 0 auto; }
 }
