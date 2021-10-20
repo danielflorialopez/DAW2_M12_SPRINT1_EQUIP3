@@ -18,7 +18,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav left">
 						<li><a href="./index.php">Home</a></li>
-						<li><a href="">Propostes</a></li> 
+						<li><a href="./proposta.php">Propostes</a></li> 
 						<li class="active"><a href="./projecte.php">Projectes</a></li>
 					</ul>
 				</div>
@@ -28,8 +28,8 @@
 		<div class="container info margin-top">  
 		  	<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
-			  	<li class="breadcrumb-item"><a href="index.php">Home</a></li>
-			  	<li class="breadcrumb-item"><a href="projecte.php">Projecte</a></li>
+			  	<li class="breadcrumb-item"><a href="./index.php">Home</a></li>
+			  	<li class="breadcrumb-item"><a href="./projecte.php">Projecte</a></li>
 			  	<li class="breadcrumb-item active" aria-current="page">Crear projecte</li>
 				</ol>
 		  	</nav>

@@ -36,10 +36,10 @@
 		<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 			  		<li class="breadcrumb-item"><a href="index.php">Home</a></li>
-			  		<li class="breadcrumb-item"><a href="proposta.php">El meu perfil</a></li>
-					<li class="breadcrumb-item"><a href="proposta.php">Els meus projectes</a></li>
-			  		<li class="breadcrumb-item"><a href="proposta.php">Projecte 1</a></li>
-			  		<li class="breadcrumb-item"><a href="proposta.php">Sala virtual</a></li>
+			  		<li class="breadcrumb-item"><a href="#">El meu perfil</a></li>
+					<li class="breadcrumb-item"><a href="elsmeusprojectes.php">Els meus projectes</a></li>
+			  		<li class="breadcrumb-item"><a href="#">Projecte 1</a></li>
+			  		<li class="breadcrumb-item"><a href="#">Sala virtual</a></li>
 			  		<li class="breadcrumb-item"><a href="recursos.php">Recursos</a></li>
 					<li class="breadcrumb-item active" aria-current="page">Editar recursos</li>
 				</ol>

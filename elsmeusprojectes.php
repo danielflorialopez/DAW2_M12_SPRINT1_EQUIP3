@@ -29,8 +29,8 @@
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 			  		<li class="breadcrumb-item"><a href="index.php">Home</a></li>
-			  		<li class="breadcrumb-item"><a href="proposta.php">El meu perfil</a></li>
-			  		<li class="breadcrumb-item active" aria-current="page">Les meves propostes</li>
+			  		<li class="breadcrumb-item"><a href="#">El meu perfil</a></li>
+			  		<li class="breadcrumb-item active" aria-current="page">Els meus projectes</li>
 				</ol>
 		  	</nav>
 	  		<div class="row">
