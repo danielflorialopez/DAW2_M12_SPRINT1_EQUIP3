@@ -46,8 +46,8 @@
 			<?php
 				echo "<table class=\"table\">";
             	echo "<thead class=\"thead-dark\"><tr><th>Titol</th><th>Categoria</th><th>Localitzacio</th><th>Estat</th></tr></thead><tbody>";
-				echo "<tr><td>Boligraf inteligent</td><td>Impresora 3D</td><td>Amposta</td><td>En procés</td><td><a href=\"modpropostes.php\"class=\"fa fa-lg fa-edit edit-icon fa2\"></a><a href=\"elimrecursos.php\" class=\"fa fa-lg fa-trash-o fa2\"></a></td></tr>";
-				echo "<tr><td>Soport USB</td><td>Impresora 3D</td><td>Deltebre</td><td>Fet</td><td><a href=\"modrecursos.php\"class=\"fa fa-lg fa-edit edit-icon fa2\"></a><a href=\"elimrecursos.php\" class=\"fa fa-lg fa-trash-o fa2\"></a></td><tr>";
+				echo "<tr><td>Boligraf inteligent</td><td>Impresora 3D</td><td>Amposta</td><td>En procés</td><td><a href=\"modprojectes.php\"class=\"fa fa-lg fa-edit edit-icon fa2\"></a><a href=\"elimrecursos.php\" class=\"fa fa-lg fa-trash-o fa2\"></a></td></tr>";
+				echo "<tr><td>Soport USB</td><td>Impresora 3D</td><td>Deltebre</td><td>Fet</td><td><a href=\"modprojectes.php\"class=\"fa fa-lg fa-edit edit-icon fa2\"></a><a href=\"elimrecursos.php\" class=\"fa fa-lg fa-trash-o fa2\"></a></td><tr>";
 				echo "</tbody></table>";
 			?>
 
