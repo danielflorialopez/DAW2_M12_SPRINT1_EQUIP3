@@ -17,16 +17,8 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav left">
 						<li><a href="./index.php">Home</a></li>
-						<li><a href="">Propostes</a></li> 
-						<li class="active"><a href="">Projectes</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">X <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="">E</a></li>
-								<li><a href="">X</a></li>
-							</ul>
-						</li>
-						<li><a href="">Contacte</a></li>
+						<li><a href="./proposta.php">Propostes</a></li> 
+						<li class="active"><a href="./projecte.php">Projectes</a></li>
 					</ul>
 				</div>
 			</div>

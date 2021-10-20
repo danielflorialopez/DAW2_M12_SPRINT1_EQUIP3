@@ -20,9 +20,9 @@
 			<div class="navbar-blue">
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav left">
-						<li><a href="index.php">Home</a></li>
-						<li><a href="proposta.php">Propostes</a></li>
-						<li><a href="">Projectes</a></li> 
+						<li><a href="./index.php">Home</a></li>
+						<li><a href="./proposta.php">Propostes</a></li>
+						<li><a href="./projecte.php">Projectes</a></li> 
 					</ul>
 				</div>
 			</div>

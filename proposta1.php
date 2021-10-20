@@ -22,7 +22,7 @@
 					<ul class="nav navbar-nav left">
 						<li><a href="./index.php">Home</a></li>
 						<li class="active"><a href="./proposta.php">Propostes</a></li>
-						<li><a href="">Projectes</a></li> 
+						<li><a href="./projecte.php">Projectes</a></li> 
 					</ul>
 				</div>
 			</div>
