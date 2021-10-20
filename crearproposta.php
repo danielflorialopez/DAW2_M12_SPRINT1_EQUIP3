@@ -1,3 +1,4 @@
+<!--1.Sessió-->
 <?php
   require_once('./sessio.php');
 ?>
@@ -5,6 +6,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
+	<!--2.Head-->
 	<?php include_once "./head.html" ?>
 	<script src="validacions.js"></script>
 
@@ -12,27 +14,22 @@
 	
 		<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 
+			<!--3. Header registrat-->
 			<?php include_once "./headerregistrat.html" ?>
 
+			<!--4. Navbar-->
 			<div class="navbar-blue">
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav left">
 						<li><a href="./index.php">Home</a></li>
 						<li class="active"><a href="./proposta.php">Propostes</a></li>
 						<li><a href="">Projectes</a></li> 
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">X <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="">E</a></li>
-								<li><a href="">X</a></li>
-							</ul>
-						</li>
-						<li><a href="">Contacte</a></li>
 					</ul>
 				</div>
 			</div>
 		</div> 
 
+		<!--5. Container principal amb tota la informació del formulari que ens serveix per a crear propostes.-->	
 		<div class="container info margin-top">  
 		  	<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -48,9 +45,9 @@
 			<form action="#" target="" method="" name="" class="formulari">
 				<div class="row">
 					<div class="col-md-6">
-						<label>Nom del projecte<span class="text-danger">*</span></label>
-						<input type="text" placeholder="Projecte" id="nomprojecte" class="formulari-crear"/>
-						<p class="error" id="errorprojecte"></p>
+						<label>Nom de la proposta<span class="text-danger">*</span></label>
+						<input type="text" placeholder="Proposta" id="nomproposta" class="formulari-crear"/>
+						<p class="error" id="errorproposta"></p>
 						<label>Localitat<span class="text-danger">*</span></label>
 						<input type="text" placeholder="Localitat" id="localitat" class="formulari-crear"/>
 						<p class="error" id="errorlocalitat"></p>
@@ -72,16 +69,18 @@
 	        			<textarea placeholder="Descripcio" maxlength="1000" id="descripcio" class="formulari-crear-textarea"></textarea>
 						<p class="error" id="errordescripcio"></p>
 					</div>
-					<input class="formulari-send btn btn-action" onclick="isNameEmpty()" type="submit" name="enviar" value="Publicar"/>
+					<input class="formulari-send btn btn-action" onclick="checkProposition()" type="submit" name="enviar" value="Publicar"/>
 				</div>
         	</form>
 		</div>
-
+		
+		<!--6. Footer-->	
 		<footer id="footer" class="top-space">		
 			<?php include_once "./footer1.html" ?>
 			<?php include_once "./footer2.html" ?>
 		</footer>	
-	
+
+		<!--7. Scripts-->		
 		<?php include_once "./scripts.html" ?>
 
 	</body>

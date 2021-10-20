@@ -1,14 +1,18 @@
+//1. Declaració de les constants/variables
 const MIN_LENGTH = 3;
 const MAX_LENGTH = 50;
 const MIN_LENGTH_FORMULARI = 20;
 
+//2. Funció que ens serveix per a comprovar que l'usuari ha posat correctament en els camps del formulari
+//si la longitud del que ha posat l'usuari compleix amb els requisits establerts i en cas contrari que li 
+//mostri mitjançant JavaScript un text informatiu.
 
-function isNameEmpty(){
-    let name = document.getElementById("nomprojecte").value;
+function checkProposition(){
+    let name = document.getElementById("nomproposta").value;
     if (name.length < MIN_LENGTH || name.length > MAX_LENGTH) {
-        document.getElementById("errorprojecte").innerText ="Nom del projecte incorrecte. El nom no compleix els requisits de longitud.";
+        document.getElementById("errorproposta").innerText ="Nom de la proposta incorrecte. El nom no compleix els requisits de longitud.";
     } else {
-        document.getElementById("errorprojecte").innerText ="";
+        document.getElementById("errorproposta").innerText ="";
     }
     let localitat = document.getElementById("localitat").value;
     if(localitat.length < MIN_LENGTH || localitat.length > MAX_LENGTH){
@@ -24,7 +28,7 @@ function isNameEmpty(){
     }
 }
 
-function isNameEmpty2(){
+function checkRecurs(){
     let recurs = document.getElementById("nomrecurs").value;
     if (recurs.length < MIN_LENGTH || recurs.length > MAX_LENGTH) {
         document.getElementById("errorrecurs").innerText ="Recurs incorrecte. El recurs no compleix els requisits de longitud.";
@@ -39,20 +43,30 @@ function isNameEmpty2(){
     }
 }
 
-function checkUsername(){
-    let username = document.getElementById("email").value;
-    
-    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9~]+\.[a-zA-Z]{2,4}$/.test(username)) {
+function checkUser() {
+    let email = document.getElementById("email").value;
+    var validEmail = false;
+    var validPass = false;
+
+    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9~]+\.[a-zA-Z]{2,4}$/.test(email)) {
         document.getElementById("erroremail").innerText ="";
+        validEmail = true;
     }else{
-        document.getElementById("erroremail").innerText ="L'email o la contrassenya és incorrecte. Intenta-ho de nou.";
+        document.getElementById("erroremail").innerText ="L'email no compleix els requisits vàlids per ser un correu electrònic. Revisa-ho.";
+        validEmail = false;
     }
     
     let password = document.getElementById("password").value;
 
     if (password.length < MIN_LENGTH || password.length > MAX_LENGTH) {
-        document.getElementById("errorpassword").innerText ="L'email o la contrassenya és incorrecte. Intenta-ho de nou.";
+        document.getElementById("errorpassword").innerText ="La contrasenya no compleix els requisits de longitud.";
+        validPass = false;
     }else{
         document.getElementById("errorpassword").innerText ="";
+        validPass = true;
+    }
+
+    if(validEmail && validPass){
+        document.forms[0].submit();
     }
 }

@@ -1,3 +1,4 @@
+<!--1.Sessió-->
 <?php
   require_once('./sessio.php');
 ?>
@@ -5,33 +6,29 @@
 <!DOCTYPE html>
 <html lang="es">
 
+	<!--2.Head-->
 	<?php include_once "./head.html" ?>
 
 	<body class="home">
 	
 		<div class="navbar navbar-inverse navbar-fixed-top headroom" >
 
+			<!--3. Header no registrat-->
 			<?php include_once "./headernoregistrat.html" ?>
 
+			<!--4. Navbar-->
 			<div class="navbar-blue">
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav left">
 						<li><a href="./index.php">Home</a></li>
 						<li class="active"><a href="">Propostes</a></li>
 						<li><a href="">Projectes</a></li> 
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">X <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="">E</a></li>
-								<li><a href="">X</a></li>
-							</ul>
-						</li>
-						<li><a href="">Contacte</a></li>
 					</ul>
 				</div>
 			</div>
 		</div> 
 
+		<!--5. Container principal amb tota la informació de les diferents propostes que s'han creat a l'aplicatiu.-->	
 		<div class="container info margin-top">  
 		  	<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -44,12 +41,17 @@
    			 	<div class="col-sm-8">
 					<h2 class="thin">Propostes</h2>
 				</div>
+				
+				<!--5.1 Crear proposta.-->	
+
     			<div class="col-sm-4 padding-plus">
 					<a class="add" href="crearproposta.php"><i class="fa fa-plus fa-lg"></i></a>
 				</div>
   			</div>
 			<hr class="proposta-hr">
 		
+			<!--5.2 Cercador avançat i les diferents propostes.-->	
+
 			<div class="row">
 				<div class="col-sm-3 box">
 					<h5 class="bold subrayado">Categoria</h5>
@@ -119,6 +121,9 @@
 					</div>
 				</div>
 			</div>
+			
+			<!--5.3 Navegació per pàgines.-->	
+
 			<nav aria-label="Page navigation example">
   				<ul class="pagination center">
     				<li class="page-item">
@@ -141,12 +146,14 @@
   				</ul>
 			</nav>
 		</div>
-
+		
+		<!--6. Footer-->	
 		<footer id="footer" class="top-space">		
 			<?php include_once "./footer1.html" ?>
 			<?php include_once "./footer2.html" ?>
 		</footer>	
 	
+		<!--7. Scripts-->
 		<?php include_once "./scripts.html" ?>
 
 	</body>

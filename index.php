@@ -1,10 +1,12 @@
-<?php
-  require_once('./sessio.php');
-?>
+<!--Aquest és el fitxer on creem la sessió la qual anirem millorant durant la realització del mateix.-->
+<?php  require_once('./sessio.php'); ?>
 
 <!DOCTYPE html>
 <html lang="es">
 
+<!--Aquí el que realitzem és "cridar" al fitxer head.html on tenim tot el que tenim dins d'aquest fitxer,
+ens serveix per a no tenir duplicitat d'etiquetes i no tenir que modificar fitxer a fitxer tots els elements si
+volem modificar una part del mateix.-->
 	<?php include_once "./head.html" ?>
 
 	<body class="home">
@@ -13,25 +15,19 @@
 
 			<?php include_once "./headernoregistrat.html" ?>
 
+<!--Aquest és el navbar segon on tenim tots els elements on l'usuari pot anar seleccionat on vol anar.-->	
 			<div class="navbar-blue">
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav left">
 						<li class="active"><a href="index.php">Home</a></li>
 						<li><a href="proposta.php">Propostes</a></li>
-						<li><a href="">Projectes</a></li> 
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">X <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="">E</a></li>
-								<li><a href="">X</a></li>
-							</ul>
-						</li>
-						<li><a href="">Contacte</a></li>
+						<li><a href="">Projectes</a></li>
 					</ul>
 				</div>
 			</div>
 		</div> 
 
+<!--Aquest és el container principal on podem anar posant tota la informació.-->	
 
 		<div class="container info margin-top">  
 		  	<ol class="breadcrumb">
