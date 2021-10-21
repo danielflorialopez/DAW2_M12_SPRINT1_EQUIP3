@@ -38,7 +38,7 @@
 					<h2 class="thin">Els meus projectes</h2>
 				</div>
     			<div class="col-sm-4 padding-plus">
-					<a class="add" href="crearproposta.php"><i class="fa fa-plus fa-lg"></i></a>
+					<a class="add" href="crearprojecte.php"><i class="fa fa-plus fa-lg"></i></a>
 				</div>
   			</div>
 			<hr class="proposta-hr">
