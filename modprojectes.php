@@ -41,7 +41,7 @@
 			<h2 class="thin">Modificar projecte</h2>
 			<hr>
 		
-			<form action="altaproposta.php proposta1.php" target="" method="post" enctype="multipart/form-data" name="" class="formulari">
+			<form target="" method="post" enctype="multipart/form-data" name="" class="formulari">
 				<div class="row">
 					<div class="col-md-6">
 						<label>Nom del projecte<span class="text-danger">*</span></label>
@@ -60,11 +60,9 @@
 					  	</select>
                         <label for="estat">Estat</label> 
                         <select name="categoria" id="categoria" class="formulari-crear">
-							<option value="cap">Per començar</option>
-							<option value="impresora3d">En proces</option>
-							<option value="fresadora">Fet</option>
-							
-							
+							<option value="start">Per començar</option>
+							<option value="progress">En proces</option>
+							<option value="done">Fet</option>
 					  	</select>          
 						<label>Imatge</label>
 						<input type="file" id="file" accept="image/png, .jpeg, .jpg, image/gif" class="formulari-crear" name="img"/>
@@ -76,7 +74,7 @@
 	        			<textarea placeholder="Descripcio" maxlength="1000" id="descripcio" class="formulari-crear-textarea"></textarea>
 						<p class="error" id="errordescripcio"></p>
 					</div>
-					<input class="formulari-send btn btn-action" onclick="isNameEmpty()" type="submit" name="enviar" value="Modificar"/>
+					<button class="formulari-send btn btn-action" onclick="checkProject()">Publicar</button>
 				</div>
         	</form>
 		</div>

@@ -32,7 +32,7 @@
 			  		<li class="breadcrumb-item"><a href="#">El meu perfil</a></li>
 					<li class="breadcrumb-item"><a href="elsmeusprojectes.php">Els meus projectes</a></li>
 			  		<li class="breadcrumb-item"><a href="#">Projecte 1</a></li>
-			  		<li class="breadcrumb-item"><a href="#">Sala virtual</a></li>
+			  		<li class="breadcrumb-item"><a href="salavirtual.php">Sala virtual</a></li>
 			  		<li class="breadcrumb-item"><a href="recursos.php">Recursos</a></li>
 					<li class="breadcrumb-item active" aria-current="page">Editar recursos</li>
 				</ol>
@@ -41,7 +41,7 @@
 			<h2 class="thin">Modificar proposta</h2>
 			<hr>
 		
-			<form action="altaproposta.php proposta1.php" target="" method="post" enctype="multipart/form-data" name="" class="formulari">
+			<form target="" method="post" enctype="multipart/form-data" name="" class="formulari">
 				<div class="row">
 					<div class="col-md-6">
 						<label>Nom del projecte<span class="text-danger">*</span></label>
@@ -68,7 +68,7 @@
 	        			<textarea placeholder="Descripcio" maxlength="1000" id="descripcio" class="formulari-crear-textarea"></textarea>
 						<p class="error" id="errordescripcio"></p>
 					</div>
-					<input class="formulari-send btn btn-action" onclick="isNameEmpty()" type="submit" name="enviar" value="Modificar"/>
+					<button class="formulari-send btn btn-action" onclick="checkPreposition()">Publicar</button>
 				</div>
         	</form>
 		</div>

@@ -255,6 +255,37 @@ p.error {
 	padding-right: 20px;
 }
 
+/*	Sala virtual	*/
+
+.imatgePrincipal {
+	width: 100%;
+}
+
+.esquerra {
+	float: left;
+	width: 50%;
+}
+
+.dreta1 {
+	float: left;
+	width: 25%;
+	padding-left: 85px;
+}
+
+.dreta2 {
+	float: left;
+	width: 25%;
+	padding-left: 85px;
+}
+
+.margin-salavirtual {
+	margin-top: 30px;
+}
+
+.margin-text {
+	margin-bottom: 30px;
+}
+
 /*	2.Navbar	*/
 
 .navbar-inverse { min-height:100px; margin-bottom:0;}

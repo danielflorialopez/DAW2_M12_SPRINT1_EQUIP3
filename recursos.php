@@ -1,6 +1,13 @@
 <!--1.Sessió-->
 <?php
-  require_once('./sessio.php');
+	include_once './classes/GestRecursos.php';
+  	require_once('./sessio.php');
+
+	if(isset($_POST['nomrecurs'])){
+		$recursos = new GestRecursos();
+		$recursos->altaRecurs($_POST['nomrecurs'],$_POST['aportatper']);
+		$_SESSION ['Recurs'][] = $recursos;
+	}
 ?>
 
 <!DOCTYPE html>
@@ -35,8 +42,8 @@
 			  		<li class="breadcrumb-item"><a href="index.php">Home</a></li>
 			  		<li class="breadcrumb-item"><a href="#">El meu perfil</a></li>
 					<li class="breadcrumb-item"><a href="elsmeusprojectes.php">Els meus projectes</a></li>
-			  		<li class="breadcrumb-item"><a href="#">Projecte 1</a></li>
-			  		<li class="breadcrumb-item"><a href="#">Sala virtual</a></li>
+			  		<li class="breadcrumb-item"><a href="#">Bolígraf intel·ligent</a></li>
+			  		<li class="breadcrumb-item"><a href="salavirtual.php">Sala virtual</a></li>
 			  		<li class="breadcrumb-item active" aria-current="page">Recursos</li>
 				</ol>
 		  	</nav>
@@ -53,7 +60,13 @@
 			<?php
 				echo "<table class=\"table\">";
             	echo "<thead class=\"thead-dark\"><tr><th>Recurs</th><th>Aportat per</th></tr></thead><tbody>";
-				echo "<tr><td>Impresora 3D</td><td>FabLab</td><td><a href=\"modrecursos.php\"class=\"fa fa-lg fa-edit edit-icon fa2\"></a><a href=\"elimrecursos.php\" class=\"fa fa-lg fa-trash-o fa2\"></a></td></tr>";
+				
+				if (isset($_SESSION['Recurs'])) {
+					foreach($_SESSION ['Recurs'] as $rec) {
+						echo "<tr><td>".$rec->getNom()."</td><td>".$rec->getAportat()."</td><td><a href=\"modrecursos.php\"class=\"fa fa-lg fa-edit edit-icon fa2\"></a><a href=\"elimrecursos.php\" class=\"fa fa-lg fa-trash-o fa2\"></a></td></tr>";
+					}
+				}
+
 				echo "<tr><td>Plastic</td><td>Promotor</td><td><a href=\"modrecursos.php\"class=\"fa fa-lg fa-edit edit-icon fa2\"></a><a href=\"elimrecursos.php\" class=\"fa fa-lg fa-trash-o fa2\"></a></td><tr>";
 				echo "</tbody></table>";
 			?>

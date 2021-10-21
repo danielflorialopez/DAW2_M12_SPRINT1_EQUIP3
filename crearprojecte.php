@@ -40,10 +40,10 @@
 			<form action="#" target="" method="" name="" class="formulari">
 				<div class="row">
 					<div class="col-md-6">
-						<label>Nom del projecte<span class="text-danger">*</span></label>
+						<label>Nom del projecte<span class="text-danger"> *</span></label>
 						<input type="text" placeholder="Projecte" id="nomprojecte" class="formulari-crear"/>
 						<p class="error" id="errorprojecte"></p>
-						<label>Localitat<span class="text-danger">*</span></label>
+						<label>Localitat<span class="text-danger"> *</span></label>
 						<input type="text" placeholder="Localitat" id="localitat" class="formulari-crear"/>
 						<p class="error" id="errorlocalitat"></p>
 						<label for="categoria">Categoria</label>
@@ -60,11 +60,11 @@
 						<input type="file" id="file" accept=".pdf" class="formulari-crear"/>
 					</div>
 					<div class="col-md-6 margin-left-formulari">
-						<label>Descripcio<span class="text-danger">*</span></label>
+						<label>Descripcio<span class="text-danger"> *</span></label>
 	        			<textarea placeholder="Descripcio" maxlength="1000" id="descripcio" class="formulari-crear-textarea"></textarea>
 						<p class="error" id="errordescripcio"></p>
 					</div>
-					<input class="formulari-send btn btn-action" onclick="isNameEmpty()" type="submit" name="enviar" value="Publicar"/>
+					<button class="formulari-send btn btn-action" onclick="checkProject()">Publicar</button>
 				</div>
         	</form>
 		</div>

@@ -21,7 +21,7 @@
 			
 			switch ($tipus) {
 				case 'maker':
-				  header("Location: ./recursos.php");
+				  header("Location: ./elsmeusprojectes.php");
 				  die();
 				  break;
 			

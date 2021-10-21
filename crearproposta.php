@@ -42,8 +42,8 @@
 			<h2 class="thin">Crear proposta</h2>
 			<hr>
 		
-			<form action="#" target="" method="" name="" class="formulari">
-				<div class="row">
+		<!--<form action="#" target="" method="" name="" class="formulari">-->
+				<div class="row formulari">
 					<div class="col-md-6">
 						<label>Nom de la proposta<span class="text-danger">*</span></label>
 						<input type="text" placeholder="Proposta" id="nomproposta" class="formulari-crear"/>
@@ -69,9 +69,9 @@
 	        			<textarea placeholder="Descripcio" maxlength="1000" id="descripcio" class="formulari-crear-textarea"></textarea>
 						<p class="error" id="errordescripcio"></p>
 					</div>
-					<input class="formulari-send btn btn-action" onclick="checkProposition()" type="submit" name="enviar" value="Publicar"/>
+					<button class="formulari-send btn btn-action" onclick="checkProposition()">Publicar</button>
 				</div>
-        	</form>
+        <!--</form>-->
 		</div>
 		
 		<!--6. Footer-->	

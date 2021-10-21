@@ -38,8 +38,8 @@
 			  		<li class="breadcrumb-item"><a href="index.php">Home</a></li>
 			  		<li class="breadcrumb-item"><a href="#">El meu perfil</a></li>
 					<li class="breadcrumb-item"><a href="elsmeusprojectes.php">Els meus projectes</a></li>
-			  		<li class="breadcrumb-item"><a href="#">Projecte 1</a></li>
-			  		<li class="breadcrumb-item"><a href="#">Sala virtual</a></li>
+			  		<li class="breadcrumb-item"><a href="#">Bolígraf intel·ligent</a></li>
+			  		<li class="breadcrumb-item"><a href="salavirtual.php">Sala virtual</a></li>
 			  		<li class="breadcrumb-item"><a href="recursos.php">Recursos</a></li>
 					<li class="breadcrumb-item active" aria-current="page">Editar recursos</li>
 				</ol>
@@ -55,7 +55,7 @@
 				<label>Aportat per<span class="text-danger">*</span></label>
 				<input type="text" placeholder="Aportat per" id="aportatper" class="formulari-crear"/>
 				<p class="error" id="erroraportat"></p>
-				<input class="formulari-send btn btn-action" onclick="isNameEmpty2()" type="submit" name="enviar" value="Publicar"/>
+				<button class="formulari-send btn btn-action" onclick="checkRecurs()">Publicar</button>
         	</form>
 		</div>
 

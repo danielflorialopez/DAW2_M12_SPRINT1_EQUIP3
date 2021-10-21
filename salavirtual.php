@@ -37,24 +37,33 @@
 			  		<li class="breadcrumb-item"><a href="#">El meu perfil</a></li>
 					<li class="breadcrumb-item"><a href="elsmeusprojectes.php">Els meus projectes</a></li>
 			  		<li class="breadcrumb-item"><a href="#">Bolígraf intel·ligent</a></li>
-			  		<li class="breadcrumb-item"><a href="salavirtual.php">Sala virtual</a></li>
-			  		<li class="breadcrumb-item"><a href="recursos.php">Recursos</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Crear recursos</li>
+					<li class="breadcrumb-item active" aria-current="page">Sala virtual</li>
 				</ol>
 		  	</nav>
 			
-			<h2 class="thin">Crear recursos</h2>
+			<h2 class="thin">Sala virtual</h2>
 			<hr>
+			<div class="esquerra">
+				<img class="imatgePrincipal" src="recursos/imatges/imatgeProva.png">
+				<p class="text-muted margin-salavirtual">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?
+				</p>
+			</div>
 		
-			<form action="recursos.php" method="post" action="" class="formulari">
-				<label>Recurs<span class="text-danger">*</span></label>
-				<input type="text" placeholder="Recurs" id="nomrecurs" name="nomrecurs" class="formulari-crear"/>
-				<p class="error" id="errorrecurs"></p>
-				<label>Aportat per<span class="text-danger">*</span></label>
-				<input type="text" placeholder="Aportat per" id="aportatper" name="aportatper" class="formulari-crear"/>
-				<p class="error" id="erroraportat"></p>
-				<button class="formulari-send btn btn-action" onclick="checkRecurs(); return false;">Publicar</button>
-        	</form>
+			<div class="dreta1">
+				<a href=""><img src="recursos/imatges/imatgeProva4x3.png"></a>
+				<p class="center bold margin-text">Gestor documental</p>
+				<a href=""><img src="recursos/imatges/imatgeProva4x3.png"></a>
+				<p class="center bold">Xat</p>
+			</div>
+
+			<div class="dreta2">
+				<a href=""><img src="recursos/imatges/imatgeProva4x3.png"></a>
+				<p class="center bold margin-text">Gestor de tasques</p>
+				<a href="recursos.php"><img src="recursos/imatges/imatgeProva4x3.png"></a>
+				<p class="center bold">Gestor de recursos</p>
+			</div>	
 		</div>
 
 		<!--6. Footer-->	
