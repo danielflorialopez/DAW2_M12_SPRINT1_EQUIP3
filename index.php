@@ -16,16 +16,7 @@ volem modificar una part del mateix.-->
 			<?php include_once "./headernoregistrat.html" ?>
 
 <!--Aquest és el navbar segon on tenim tots els elements on l'usuari pot anar seleccionat on vol anar.-->	
-			<div class="navbar-blue">
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav left">
-						<li class="active"><a href="./index.php">Home</a></li>
-						<li><a href="./proposta.php">Propostes</a></li>
-						<li><a href="./projecte.php">Projectes</a></li>
-					</ul>
-				</div>
-			</div>
-		</div> 
+	<?php include_once "./segonheader.html" ?> 
 
 <!--Aquest és el container principal on podem anar posant tota la informació.-->	
 

@@ -9,8 +9,8 @@
 
 	if (isset($_POST["mail_entra"]) && isset($_POST["pass_entra"])) {
 		
-		$mail = 'ericvidiella@iesmontsia.org';
-		$pass = 'Admin1234';
+		$mail = 'admin@admin.com';
+		$pass = 'admin';
 		$mailEntra = $_POST["mail_entra"];
 		$passEntra = $_POST["pass_entra"];
 		$tipus= 'maker';
@@ -21,7 +21,7 @@
 			
 			switch ($tipus) {
 				case 'maker':
-				  header("Location: ./elsmeusprojectes.php");
+				  header("Location: ./perfil.php");
 				  die();
 				  break;
 			
@@ -54,16 +54,7 @@
 			<?php include_once "./headernoregistrat.html" ?>
 
 		<!--3. Navbar blau-->	
-		<div class="navbar-blue">
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav left">
-					<li class="active"><a href="./index.php">Home</a></li>
-					<li><a href="./proposta.php">Propostes</a></li>
-					<li><a href="./projecte.php">Projectes</a></li> 
-				</ul>
-			</div>
-		</div>
-	</div> 
+		<?php include_once "./segonheader.html" ?> 
 
 
 	<!--4. Container principal amb tota la informació del formulari de inici de sessió.-->	

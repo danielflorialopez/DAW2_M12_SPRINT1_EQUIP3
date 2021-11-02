@@ -71,16 +71,21 @@
         }
 
         //Llegir
-        public function readProposta(){
+        public function ImprimirProposta(){
             echo "Titol: ".$titol." </br>"."Categoria: ".$categoria." </br>"."Localització: ".$localitzacio." </br>"."Descripcio: ".$descripcio." </br>"."Data: ".$data." </br>"."Imatge: ".$imatge." </br>"."Fitxer: ".$fitxer." </br>"."Estat: ".$estat." </br>";
         }
 
         //Crear
-        public function createProposta($titol, $categoria, $localitzacio, $descripcio, $data, $imatge, $fitxer, $estat) {
-            $cr[] = new Projecte;
-            array_push($cr,$titol, $categoria, $localitzacio, $descripcio, $data, $imatge, $fitxer, $estat);
-             array_push($_SESSION['propostes'] ,$cr);
-          }
+        // METODES
+        public function crearProposta($titol, $descripcio, $categoria, $localitzacio, $estat, $imatge, $fitxer) {
+            $this->titol = $titol;
+            $this->descripcio = $descripcio;
+            $this->categoria = $categoria;
+            $this->localitzacio = $localitzacio;
+            $this->estat = $estat;
+            $this->imatge = $imatge;
+            $this->fitxer = $fitxer;
+        }
         
     }
 
